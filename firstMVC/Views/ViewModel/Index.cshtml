@@ -1,0 +1,18 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model firstMVC.MovieViewModel
+
+<h1>Movie Details</h1>
+<p>Title: @Model.Movie.Name</p>
+
+<h2>Customers</h2>
+<ul>
+    @foreach (var customer in Model.Customers)
+    {
+        <li>@customer.Name</li>
+    }
+</ul>
